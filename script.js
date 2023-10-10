@@ -1,5 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const button = document.getElementById('clear');
 
 function addTask(){
     if(inputBox.value ===''){
@@ -31,6 +32,18 @@ listContainer.addEventListener("click",function(e){
         saveData();
     }
 },false);
+
+button.addEventListener('click',()=>{
+     localStorage.clear();
+     listContainer.innerHTML = '';
+     
+});
+
+inputBox.addEventListener('keypress',(e)=>{
+    if(e.key === 'Enter'){
+        addTask();
+    }
+});
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);

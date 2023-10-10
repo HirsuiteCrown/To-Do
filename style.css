@@ -98,6 +98,24 @@ ul li span:hover{
     background: #edeef0;
 }
 
+#clear{
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: -45px;
+}
+.clear-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
